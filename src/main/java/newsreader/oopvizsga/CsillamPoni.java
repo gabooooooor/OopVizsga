@@ -11,6 +11,7 @@ package newsreader.oopvizsga;
 public class CsillamPoni {
     private String nev;
     private int csillamPont;
+    
     public CsillamPoni(String nev, int csillamPont) {
     this.nev = nev;  //without "this." the "nev" parameter get's istselves value
     this.csillamPont = csillamPont;
@@ -26,6 +27,7 @@ public class CsillamPoni {
     {
         return nev;
     }
+    
     public String bemutatkozas() {
     return nev + ": " + csillamPont;
  }
