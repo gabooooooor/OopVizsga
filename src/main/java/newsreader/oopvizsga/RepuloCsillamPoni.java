@@ -20,6 +20,6 @@ public class RepuloCsillamPoni extends CsillamPoni{
     @Override
     public String bemutatkozas() 
     {
-        return getNev() + ": " + getCsillamPont() + ", " +szarnySzin;
+        return getNev() + ": " + getCsillamPont() + ", " +szarnySzin; //adding "szarnySzin" to the "bemutatkozas()"
     }
 }

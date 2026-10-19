@@ -35,6 +35,6 @@ public class CsillamPoni {
     public String bemutatkozas() {
     
         return nev + ": " + csillamPont;
- }
-
+    }
+    
 }
