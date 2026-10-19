@@ -13,14 +13,18 @@ public class CsillamPoni {
     private int csillamPont;
     
     public CsillamPoni(String nev, int csillamPont) {
-    this.nev = nev;  //without "this." the "nev" parameter get's istselves value
-    this.csillamPont = csillamPont;
+        if(csillamPont < 0){throw new IllegalArgumentException("CsillamPont can't be -");}
+        if(nev == null || nev.isEmpty()){throw new IllegalArgumentException("Nev can't be empty");}
+        this.nev = nev;  //without "this." the "nev" parameter get's istselves value
+        this.csillamPont = csillamPont;
     }
     public void adjCsillamot(int mennyiseg) {
-    csillamPont += mennyiseg;
+        if(mennyiseg < 0){throw new IllegalArgumentException("CsillamPont can't be -");}
+        csillamPont += mennyiseg;
     }
     public int getCsillamPont() {
-    return csillamPont;
+    
+        return csillamPont;
     }
     
     public String getNev()
@@ -29,7 +33,8 @@ public class CsillamPoni {
     }
     
     public String bemutatkozas() {
-    return nev + ": " + csillamPont;
+    
+        return nev + ": " + csillamPont;
  }
 
 }
