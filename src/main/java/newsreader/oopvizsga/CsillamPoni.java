@@ -12,7 +12,7 @@ public class CsillamPoni {
     private String nev;
     private int csillamPont;
     public CsillamPoni(String nev, int csillamPont) {
-    this.nev = nev;
+    this.nev = nev;  //without "this." the "nev" parameter get's istselves value
     this.csillamPont = csillamPont;
     }
     public void adjCsillamot(int mennyiseg) {
